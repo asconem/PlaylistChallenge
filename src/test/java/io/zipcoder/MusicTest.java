@@ -34,8 +34,8 @@ public class MusicTest {
 
         String[] playlist = {"stash", "tweezer", "cavern", "acdcbag", "light", "antelope", "hood"};
         Music music = new Music(playlist);
-        Integer startingIndex = 2;
-        String selection = "light";
+        Integer startingIndex = 0;
+        String selection = "antelope";
         Integer expected = 2;
         Integer actual = music.selection(startingIndex, selection);
         Assert.assertEquals(expected, actual);
