@@ -28,4 +28,17 @@ public class MusicTest {
         Integer actual = music.selection(startingIndex, selection);
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void selectionTest3(){
+
+        String[] playlist = {"stash", "tweezer", "cavern", "acdcbag", "light", "antelope", "hood"};
+        Music music = new Music(playlist);
+        Integer startingIndex = 2;
+        String selection = "light";
+        Integer expected = 2;
+        Integer actual = music.selection(startingIndex, selection);
+        Assert.assertEquals(expected, actual);
+    }
+
 }
